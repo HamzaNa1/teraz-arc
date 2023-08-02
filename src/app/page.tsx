@@ -8,7 +8,7 @@ import Vision from "@/components/Vision";
 
 export default function Home() {
 	return (
-		<main>
+		<main className="w-screen">
 			<Navbar />
 			<Main />
 			<Vision />
