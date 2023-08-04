@@ -10,7 +10,7 @@ export default function Main() {
 						<div className="w-[75%] h-[50%]">
 							<img src="/images/v1.svg"></img>
 						</div>
-						<div className="w-[25%] h-[50%] flex justify-end">
+						<div className="w-[25%] h-[50%] flex items-start justify-end">
 							<img src="/images/v2.svg"></img>
 						</div>
 						<div className="h-[50%] w-[40%] flex items-end">
