@@ -10,7 +10,7 @@ export default function Main() {
 						<div className="w-[75%] h-[50%]">
 							<img src="/images/v1.svg"></img>
 						</div>
-						<div className="w-[25%] h-[50%]">
+						<div className="w-[25%] h-[50%] flex justify-end">
 							<img src="/images/v2.svg"></img>
 						</div>
 						<div className="h-[50%] w-[40%] flex items-end">
@@ -19,12 +19,12 @@ export default function Main() {
 					</div>
 				</div>
 				<div className="absolute w-full h-full">
-					<div className="h-full ww-full flex items-end">
-						<img src="/images/v3.svg"></img>
+					<div className="h-full w-full flex items-end">
+						<img src="/images/v3.svg" className="w-full"></img>
 					</div>
 				</div>
 
-				<div className="w-full h-full flex flex-col justify-center items-center">
+				<div className="w-full h-full flex flex-col justify-center items-center pb-5">
 					<div className="w-[25%] max-md:w-[50%]">
 						<img src="/images/icon.svg" alt="" className="w-full" />
 					</div>
