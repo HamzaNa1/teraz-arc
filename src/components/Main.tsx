@@ -2,16 +2,16 @@ import Navbar from "./Navbar";
 
 export default function Main() {
 	return (
-		<div className="container flex flex-col max-w-full h-screen bg-[#323232]">
+		<div className="container flex flex-col max-w-full h-screen min-h-[700px] bg-[#323232]">
 			<Navbar></Navbar>
 			<div className="relative w-full h-full">
 				<div className="absolute w-full h-full">
 					<div className="flex flex-wrap w-full h-full">
 						<div className="w-[75%] h-[50%]">
-							<img src="/images/v1.svg"></img>
+							<img src="/images/v1.svg" className="drop-shadow-2  xl"></img>
 						</div>
-						<div className="w-[25%] h-[50%] flex justify-end">
-							<img src="/images/v2.svg"></img>
+						<div className="w-[25%] h-[50%] flex items-start justify-end">
+							<img src="/images/v2.svg" className="drop-shadow-xl"></img>
 						</div>
 						<div className="h-[50%] w-[40%] flex items-end">
 							<img src="/images/v4.svg"></img>
