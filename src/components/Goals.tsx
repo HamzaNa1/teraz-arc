@@ -36,7 +36,6 @@ export default function Goals() {
 					<span className="text-secondary">و الجهد</span>
 				</div>
 			</div>
-			c
 		</div>
 	);
 }
