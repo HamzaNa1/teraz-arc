@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 export default function Main() {
 	return (
-		<div className="container flex flex-col max-w-full h-screen min-h-[700px] bg-[#323232]">
+		<div className="container flex flex-col max-w-full h-screen min-h-[900px] bg-[#323232]">
 			<Navbar></Navbar>
 			<div className="relative w-full h-full">
 				<div className="absolute w-full h-full">
@@ -24,15 +24,15 @@ export default function Main() {
 					</div>
 				</div>
 
-				<div className="w-full h-full flex flex-col justify-center items-center pb-5">
-					<div className="md:w-[25%] w-[50%]">
-						<img src="/images/icon.svg" alt="" className="w-full" />
+				<div className="w-full h-full flex flex-col justify-center items-center pb-16">
+					<div className="md:w-[25%] w-[50%] flex justify-center">
+						<img src="/images/icon.svg" alt="" className="w-[50vh]" />
 					</div>
 					<div className="flex flex-col gap-5 text-center mt-5">
-						<p className="text-primary md:text-5xl text-3xl">
+						<span className="text-primary md:text-5xl text-3xl">
 							مؤسسة الطراز المعماري للمقاولات
-						</p>
-						<p className="md:text-3xl text-xl">مستمرون معكم منذ 1993م</p>
+						</span>
+						<span className="md:text-3xl text-xl">مستمرون معكم منذ 1993م</span>
 					</div>
 				</div>
 			</div>
