@@ -5,12 +5,12 @@ export default function Navbar() {
 		<>
 			<div className="container max-w-full h-[5rem] bg-white">
 				<div className="w-full h-full flex justify-end">
-					<div className="flex w-full gap-[7rem] justify-center items-center text-primary text-3xl">
-						<button>تواصل</button>
-						<button>أعمالنا</button>
-						<button>خدماتنا</button>
-						<button>أهدافنا</button>
-						<button>رؤيتنا</button>
+					<div className="invisible md:visible hidden md:flex w-full justify-center items-center text-primary text-3xl">
+						<button className="m-auto">تواصل</button>
+						<button className="m-auto">أعمالنا</button>
+						<button className="m-auto">خدماتنا</button>
+						<button className="m-auto">أهدافنا</button>
+						<button className="m-auto">رؤيتنا</button>
 					</div>
 
 					<div className="h-full p-2">

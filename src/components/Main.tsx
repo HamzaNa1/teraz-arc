@@ -25,14 +25,14 @@ export default function Main() {
 				</div>
 
 				<div className="w-full h-full flex flex-col justify-center items-center pb-5">
-					<div className="w-[25%] max-md:w-[50%]">
+					<div className="md:w-[25%] w-[50%]">
 						<img src="/images/icon.svg" alt="" className="w-full" />
 					</div>
 					<div className="flex flex-col gap-5 text-center mt-5">
-						<p className="text-primary text-5xl max-md:text-3xl">
+						<p className="text-primary md:text-5xl text-3xl">
 							مؤسسة الطراز المعماري للمقاولات
 						</p>
-						<p className="text-3xl max-md:text-xl">مستمرون معكم منذ 1993م</p>
+						<p className="md:text-3xl text-xl">مستمرون معكم منذ 1993م</p>
 					</div>
 				</div>
 			</div>
