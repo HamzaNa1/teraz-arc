@@ -74,7 +74,12 @@ export default function Navbar({
 			</div>
 			{menuShown ? (
 				<div className="flex flex-col p-2 bg-white text-black">
-					<button className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md">
+					<button
+						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
+						onClick={() =>
+							elements[0].current?.scrollIntoView({ behavior: "smooth" })
+						}
+					>
 						رؤيتنا
 					</button>
 					<button
