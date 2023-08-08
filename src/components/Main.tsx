@@ -1,9 +1,14 @@
+import { RefObject } from "react";
 import Navbar from "./Navbar";
 
-export default function Main() {
+export default function Main({
+	elements,
+}: {
+	elements: RefObject<HTMLDivElement>[];
+}) {
 	return (
 		<div className="container flex flex-col max-w-full h-screen min-h-[900px] bg-[#323232]">
-			<Navbar></Navbar>
+			<Navbar elements={elements}></Navbar>
 			<div className="relative w-full h-full">
 				<div className="absolute w-full h-full">
 					<div className="flex flex-wrap w-full h-full">
