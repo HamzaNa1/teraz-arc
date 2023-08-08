@@ -1,7 +1,7 @@
 "use client";
 import { Image } from "@/utils/ImageHelper";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export default function ImageSlider({ images }: { images: Image[] }) {
@@ -18,6 +18,14 @@ export default function ImageSlider({ images }: { images: Image[] }) {
 		const newIndex = isLastSlide ? 0 : currentIndex + 1;
 		setCurrentIndex(newIndex);
 	};
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			nextSlide();
+		}, 5000);
+
+		return () => clearInterval(interval);
+	}, [currentIndex]);
 
 	return (
 		<div className="max-w-4xl w-full aspect-[9/16] lg:aspect-[16/14] m-auto py-16 px-4 relative group">
