@@ -18,7 +18,7 @@ export default function Contact() {
 					</span>
 				</div>
 
-				<div className="grid md:grid-cols-2 grid-cols-1 gap-x-32 gap-y-16 place-items-start md:place-items-center">
+				<div className="grid md:grid-cols-2 grid-cols-1 gap-x-32 gap-y-16 place-items-start ">
 					<div className="flex flex-row gap-3 justify-center items-center">
 						<img src="/images/home.svg"></img>
 						<span className="text-black text-3xl md:text-4xl">
@@ -49,7 +49,7 @@ export default function Contact() {
 						target="_blank"
 						className="flex flex-row gap-3 justify-center items-center"
 					>
-						<AiOutlineInstagram className="fill-black w-16 h-full" />
+						<AiOutlineInstagram className="fill-black w-14 h-full" />
 						<span className="text-black text-3xl md:text-4xl">@Terazarc</span>
 					</Link>
 
@@ -59,7 +59,7 @@ export default function Contact() {
 						target="_blank"
 						className="flex flex-row gap-3 justify-center items-center"
 					>
-						<AiOutlineWhatsApp className="fill-black w-16 h-full" />
+						<AiOutlineWhatsApp className="fill-black w-14 h-full" />
 						<span className="text-black text-3xl md:text-4xl">
 							+966 504518753
 						</span>
