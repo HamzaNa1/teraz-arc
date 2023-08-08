@@ -14,8 +14,9 @@ export default function Navbar({
 		<>
 			<div className="container max-w-full h-[5rem] bg-white">
 				<div className="w-full h-full flex justify-end">
-					<div className="hidden md:flex w-full justify-center items-center text-primary text-3xl gap-20">
+					<div className="hidden md:flex w-full justify-center items-center text-3xl gap-20 text-primary">
 						<button
+							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
 								elements[4].current?.scrollIntoView({ behavior: "smooth" })
 							}
@@ -23,6 +24,7 @@ export default function Navbar({
 							تواصل
 						</button>
 						<button
+							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
 								elements[3].current?.scrollIntoView({ behavior: "smooth" })
 							}
@@ -30,6 +32,7 @@ export default function Navbar({
 							أعمالنا
 						</button>
 						<button
+							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
 								elements[2].current?.scrollIntoView({ behavior: "smooth" })
 							}
@@ -37,6 +40,7 @@ export default function Navbar({
 							خدماتنا
 						</button>
 						<button
+							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
 								elements[1].current?.scrollIntoView({ behavior: "smooth" })
 							}
@@ -44,6 +48,7 @@ export default function Navbar({
 							أهدافنا
 						</button>
 						<button
+							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
 								elements[0].current?.scrollIntoView({ behavior: "smooth" })
 							}
@@ -68,17 +73,12 @@ export default function Navbar({
 				</div>
 			</div>
 			{menuShown ? (
-				<div className="flex flex-col gap-2 p-2 bg-white text-black">
-					<button
-						className="text-start"
-						onClick={() =>
-							elements[0].current?.scrollIntoView({ behavior: "smooth" })
-						}
-					>
+				<div className="flex flex-col p-2 bg-white text-black">
+					<button className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md">
 						رؤيتنا
 					</button>
 					<button
-						className="text-start"
+						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() =>
 							elements[1].current?.scrollIntoView({ behavior: "smooth" })
 						}
@@ -86,7 +86,7 @@ export default function Navbar({
 						أهدافنا
 					</button>
 					<button
-						className="text-start"
+						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() =>
 							elements[2].current?.scrollIntoView({ behavior: "smooth" })
 						}
@@ -94,7 +94,7 @@ export default function Navbar({
 						خدماتنا
 					</button>
 					<button
-						className="text-start"
+						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() =>
 							elements[3].current?.scrollIntoView({ behavior: "smooth" })
 						}
@@ -102,7 +102,7 @@ export default function Navbar({
 						أعمالنا
 					</button>
 					<button
-						className="text-start"
+						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() =>
 							elements[4].current?.scrollIntoView({ behavior: "smooth" })
 						}

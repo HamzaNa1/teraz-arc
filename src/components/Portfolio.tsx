@@ -13,9 +13,9 @@ export default function Portfolio() {
 	}, []);
 
 	return (
-		<div className="container max-w-full  min-h-[500px] bg-[#585858]">
-			<div className="h-full flex flex-col justify-center items-center p-12 gap-5">
-				<span className="text-3xl">بعض الأعمال المنفذة</span>
+		<div className="container max-w-full min-h-[500px] bg-primaryPage">
+			<div className="h-full flex flex-col justify-center items-center py-8 px-6 gap-5">
+				<span className="text-4xl text-black">بعض الأعمال المنفذة</span>
 				{!data && <span>Loading...</span>}
 				{data && <ImageSlider images={data?.images}></ImageSlider>}
 			</div>

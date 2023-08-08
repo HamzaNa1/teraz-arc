@@ -28,6 +28,28 @@ export default function Main({
 						<img src="/images/v3.svg" className="w-full"></img>
 					</div>
 				</div>
+				<div className="absolute w-full h-full top-[180px] left-[40px] ">
+					<img
+						src="/images/blackstar.svg"
+						className="w-16 h-16 rotate-45"
+					></img>
+				</div>
+				<div className="absolute w-full h-full top-[140px] left-[120px]">
+					<img src="/images/blackstar.svg" className="w-16 h-16"></img>
+				</div>
+				<div className="absolute w-full h-full top-[340px] left-[40px]">
+					<img
+						src="/images/blackstar.svg"
+						className="w-16 h-16 rotate-45"
+					></img>
+				</div>
+
+				<div className="absolute w-full h-full top-[340px] left-[100px]">
+					<img
+						src="/images/blackstar.svg"
+						className="w-16 h-16 rotate-45"
+					></img>
+				</div>
 
 				<div className="w-full h-full flex flex-col justify-center items-center pb-16">
 					<div className="md:w-[25%] w-[50%] flex justify-center">

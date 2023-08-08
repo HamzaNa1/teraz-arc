@@ -18,7 +18,7 @@ export default function Home() {
 	const elements = [vision, goals, services, portfolio, contact];
 
 	return (
-		<main className="w-screen overflow-hidden">
+		<main className="w-screen max-w-[100vw] overflow-hidden">
 			<Main elements={elements} />
 			<div ref={vision}>
 				<Vision />
