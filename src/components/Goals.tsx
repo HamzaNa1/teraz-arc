@@ -5,18 +5,17 @@ import { LiaWrenchSolid } from "react-icons/lia";
 
 export default function Goals() {
 	return (
-		<div className="container max-w-full min-h-fit h-fit bg-primaryPage flex flex-col items-center gap-y-11 p-10">
-			<div className="relative w-full h-full">
-				<div className="absolute w-full h-full top-[340px] left-[40px]">
-					<img
-						src="/images/blackstar.svg"
-						className="w-16 h-16 rotate-45"
-					></img>
-				</div>
+		<div className="container relative max-w-full min-h-fit h-fit bg-primaryPage flex flex-col justify-start items-center gap-y-11 p-10">
+			<div className="absolute w-full h-full">
+				{/* stars */}
+				<img
+					src="/images/whitestar.svg"
+					className="w-16 h-16 absolute top-[340px] left-[60px] rotate-45"
+				></img>
 			</div>
 
-			<span className="text-[rgb(81,81,81)] text-4xl">أهداف المؤسسة</span>
-			<div className="h-full hidden md:flex flex-col justify-center items-center">
+			<span className="text-[rgb(81,81,81)] text-4xl z-10">أهداف المؤسسة</span>
+			<div className="h-full hidden md:flex flex-col justify-center items-center z-10">
 				<div className="flex gap-[6rem]">
 					<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 						<LiaWrenchSolid className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
