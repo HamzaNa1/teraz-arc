@@ -31,21 +31,19 @@ export default function Main({
 
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 rotate-45 top-[180px] left-[40px]"
+					className="absolute hidden md:flex w-16 h-16 rotate-45 top-[180px] left-[40px] drop-shadow-lg"
 				></img>
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 top-[140px] left-[120px]"
+					className="absolute hidden md:flex w-16 h-16 top-[140px] left-[120px] drop-shadow-lg"
 				></img>
-
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 rotate-45 top-[340px] left-[40px]"
+					className="absolute hidden md:flex w-16 h-16 rotate-45 top-[340px] left-[40px] drop-shadow-lg"
 				></img>
-
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 top-[280px] left-[100px]"
+					className="absolute hidden md:flex w-16 h-16 top-[280px] left-[100px] drop-shadow-lg"
 				></img>
 
 				<div className="w-full h-full flex flex-col justify-center items-center pb-16">

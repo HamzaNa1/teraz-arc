@@ -49,8 +49,8 @@ export default function Contact() {
 						target="_blank"
 						className="flex flex-row gap-3 justify-center items-center group"
 					>
-						<AiOutlineInstagram className="fill-black w-14 h-full group-hover:fill-primary" />
-						<span className="text-black text-3xl md:text-4xl group-hover:text-primary">
+						<AiOutlineInstagram className="fill-black w-14 h-full group-hover:fill-primary transition duration-200" />
+						<span className="text-black text-3xl md:text-4xl group-hover:text-primary transition duration-200">
 							@Terazarc
 						</span>
 					</Link>
@@ -61,8 +61,8 @@ export default function Contact() {
 						target="_blank"
 						className="flex flex-row gap-3 justify-center items-center group"
 					>
-						<AiOutlineWhatsApp className="fill-black w-14 h-full group-hover:fill-primary" />
-						<span className="text-black text-3xl md:text-4xl group-hover:text-primary">
+						<AiOutlineWhatsApp className="fill-black w-14 h-full group-hover:fill-primary transition duration-200" />
+						<span className="text-black text-3xl md:text-4xl group-hover:text-primary transition duration-200">
 							+966 504518753
 						</span>
 					</Link>
