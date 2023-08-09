@@ -1,31 +1,35 @@
-// "use server";
+"use server";
 
-// import { MongoClient } from "mongodb";
-// import { zact } from "zact/server";
+import { MongoClient } from "mongodb";
+import { zact } from "zact/server";
 
-// export const GetImages = zact()(async () => {
-// 	const connectionString =
-// 		"mongodb+srv://root:JgwHiDp2fbs6UD8x@cluster0.qtyqko0.mongodb.net/?retryWrites=true&w=majority";
+export interface Image {
+	url: string;
+}
 
-// 	const client = new MongoClient(connectionString);
+export const GetImages = zact()(async () => {
+	const connectionString =
+		"mongodb+srv://root:JgwHiDp2fbs6UD8x@cluster0.qtyqko0.mongodb.net/?retryWrites=true&w=majority";
 
-// 	try {
-// 		await client.connect();
+	const client = new MongoClient(connectionString);
 
-// 		const db = client.db("teraz");
+	try {
+		await client.connect();
 
-// 		const items = await db.collection("images").find({}).toArray();
+		const db = client.db("teraz");
 
-// 		const images: Image[] = items.map((x) => {
-// 			return { url: x.url };
-// 		});
+		const items = await db.collection("images").find({}).toArray();
 
-// 		return { images: images };
-// 	} catch {
-// 		return {
-// 			images: [{ url: "/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg" }],
-// 		};
-// 	} finally {
-// 		await client.close(true);
-// 	}
-// });
+		const images: Image[] = items.map((x) => {
+			return { url: x.url };
+		});
+
+		return { images: images };
+	} catch {
+		return {
+			images: [{ url: "/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg" }],
+		};
+	} finally {
+		await client.close(true);
+	}
+});
