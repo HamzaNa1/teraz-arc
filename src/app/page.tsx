@@ -15,7 +15,6 @@ export default function Home() {
 		const position = window.scrollY;
 		setScrollPosition(position);
 	};
-	console.log(scrollPosition);
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll, { passive: true });
