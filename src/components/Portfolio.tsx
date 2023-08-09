@@ -1,15 +1,22 @@
 "use client";
 
-import { useZact } from "zact/client";
 import ImageSlider from "./ImageSlider";
-import { GetImages } from "@/utils/ImageHelper";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { MoonLoader } from "react-spinners";
+import { GetImagesResponse } from "@/types/Images";
 export default function Portfolio() {
-	const { mutate, data } = useZact(GetImages);
+	const [data, setData] = useState<GetImagesResponse | undefined>(undefined);
 
 	useEffect(() => {
-		mutate(null);
+		async function getImages() {
+			const res = await fetch("/api/images", { next: { revalidate: 3600 } });
+
+			const imageData: GetImagesResponse = await res.json();
+
+			setData(imageData);
+		}
+
+		getImages();
 	}, []);
 
 	return (

@@ -1,5 +1,5 @@
 "use client";
-import { Image } from "@/utils/ImageHelper";
+import { Image } from "@/types/Images";
 
 import React, { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
