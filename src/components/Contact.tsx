@@ -47,20 +47,22 @@ export default function Contact() {
 						href="https://www.instagram.com/terazarc/"
 						rel="noopener noreferrer"
 						target="_blank"
-						className="flex flex-row gap-3 justify-center items-center"
+						className="flex flex-row gap-3 justify-center items-center group"
 					>
-						<AiOutlineInstagram className="fill-black w-14 h-full" />
-						<span className="text-black text-3xl md:text-4xl">@Terazarc</span>
+						<AiOutlineInstagram className="fill-black w-14 h-full group-hover:fill-primary" />
+						<span className="text-black text-3xl md:text-4xl group-hover:text-primary">
+							@Terazarc
+						</span>
 					</Link>
 
 					<Link
 						href="https://api.whatsapp.com/send?phone=966504518753"
 						rel="noopener noreferrer"
 						target="_blank"
-						className="flex flex-row gap-3 justify-center items-center"
+						className="flex flex-row gap-3 justify-center items-center group"
 					>
-						<AiOutlineWhatsApp className="fill-black w-14 h-full" />
-						<span className="text-black text-3xl md:text-4xl">
+						<AiOutlineWhatsApp className="fill-black w-14 h-full group-hover:fill-primary" />
+						<span className="text-black text-3xl md:text-4xl group-hover:text-primary">
 							+966 504518753
 						</span>
 					</Link>
