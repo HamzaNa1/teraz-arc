@@ -90,7 +90,7 @@ export default function Goals() {
 					</div>
 				</div>
 
-				<div className="md:hidden h-fit w-full min-h-fit flex flex-col gap-8 justify-center items-center">
+				<div className="md:hidden h-fit w-full min-h-fit flex flex-col gap-8 justify-center items-center z-10">
 					<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 						<LiaWrenchSolid className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
 						<span className="text-secondary group-hover:text-white">
