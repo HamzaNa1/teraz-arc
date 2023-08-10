@@ -13,7 +13,7 @@ export default function Main({
 				<div className="absolute w-full h-full">
 					<div className="flex flex-wrap w-full h-full">
 						<div className="w-[75%] h-[50%]">
-							<img src="/images/v1.svg" className="drop-shadow-2  xl"></img>
+							<img src="/images/v1.svg" className="drop-shadow-2xl"></img>
 						</div>
 						<div className="w-[25%] h-[50%] flex items-start justify-end">
 							<img src="/images/v2.svg" className="drop-shadow-xl"></img>
@@ -31,19 +31,19 @@ export default function Main({
 
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 rotate-45 top-[180px] left-[40px] drop-shadow-lg"
+					className="absolute hidden md:block w-16 h-16 rotate-45 top-[180px] left-[40px] drop-shadow-lg"
 				></img>
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 top-[140px] left-[120px] drop-shadow-lg"
+					className="absolute hidden md:block w-16 h-16 top-[140px] left-[120px] drop-shadow-lg"
 				></img>
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 rotate-45 top-[340px] left-[40px] drop-shadow-lg"
+					className="absolute hidden md:block w-16 h-16 rotate-45 top-[340px] left-[40px] drop-shadow-lg"
 				></img>
 				<img
 					src="/images/blackstar.svg"
-					className="absolute hidden md:flex w-16 h-16 top-[280px] left-[100px] drop-shadow-lg"
+					className="absolute hidden md:block w-16 h-16 top-[280px] left-[100px] drop-shadow-lg"
 				></img>
 
 				<div className="w-full h-full flex flex-col justify-center items-center pb-16">

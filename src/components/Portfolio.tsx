@@ -13,16 +13,43 @@ export default function Portfolio() {
 	}, []);
 
 	return (
-		<div className="container max-w-full min-h-[500px] bg-primaryPage">
-			<div className="flex flex-col justify-center items-center py-8 px-6 gap-5">
+		<div className="container max-w-full min-h-[85vh] bg-primaryPage">
+			<div className="absolute w-full min-h-[85vh]">
+				{/* stars */}
+				<img
+					src="/images/whitestar.svg"
+					className="hidden md:block w-16 h-16 absolute bottom-[40px] left-[60px] rotate-45 drop-shadow-lg"
+				></img>
+
+				<img
+					src="/images/whitestar.svg"
+					className="hidden md:block w-16 h-16 absolute bottom-[120px] left-[96px] drop-shadow-lg"
+				></img>
+
+				<img
+					src="/images/whitestar.svg"
+					className="hidden md:block w-16 h-16 absolute top-[40px] right-[60px] drop-shadow-lg"
+				></img>
+
+				<img
+					src="/images/whitestar.svg"
+					className="hidden md:block w-16 h-16 absolute top-[120px] right-[96px] rotate-45 drop-shadow-lg"
+				></img>
+
+				<img
+					src="/images/whitestar.svg"
+					className="hidden md:block w-16 h-16 absolute translate-y-[200px] right-[60px] drop-shadow-lg"
+				></img>
+			</div>
+			<div className="relative flex flex-col justify-center items-center py-10 px-6 gap-12 z-10">
 				<span className="text-4xl text-black">بعض الأعمال المنفذة</span>
+				{!data && (
+					<div className="w-full min-h-[500px] flex justify-center items-center">
+						<MoonLoader color={"#BF971B"} size={100} speedMultiplier={0.5} />
+					</div>
+				)}
 				{data && <ImageSlider images={data?.images}></ImageSlider>}
 			</div>
-			{!data && (
-				<div className="w-full min-h-[500px] flex justify-center items-center">
-					<MoonLoader color={"#BF971B"} size={100} speedMultiplier={0.5} />
-				</div>
-			)}
 		</div>
 	);
 }

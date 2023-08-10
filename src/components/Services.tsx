@@ -2,11 +2,11 @@ import { MdVerified } from "react-icons/md";
 
 export default function Services() {
 	return (
-		<div className="container max-w-full min-h-fit bg-secondaryPage p-4 lg:p-10 text-primary flex flex-col gap-7">
+		<div className="container max-w-full min-h-[85vh] bg-secondaryPage px-4 lg:px-10 py-10 text-primary flex flex-col gap-12">
 			<div className="w-full h-full flex justify-center items-center text-4xl">
 				<span className="text-black">الخدمات التي نقدمها</span>
 			</div>
-			<div className="flex lg:flex-row flex-col justify-center items-center gap-10">
+			<div className="h-full flex lg:flex-row flex-col flex-1 justify-center items-center gap-10">
 				<div className="lg:w-[50%] w-full rounded-2xl border-[#BF971B] border-[4px] p-2">
 					<img
 						src="/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg"
