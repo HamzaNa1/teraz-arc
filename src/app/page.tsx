@@ -52,7 +52,7 @@ export default function Home() {
 			</div>
 			{scrollPosition != 0 ? (
 				<div
-					className="fixed bottom-5 right-5 cursor-pointer"
+					className="fixed bottom-5 right-5 cursor-pointer z-50"
 					onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
 				>
 					<BsFillArrowUpCircleFill className="fill-primary w-10 h-10 drop-shadow-md hover:fill-darkPrimary active:fill-darkPrimary transition duration-300" />
