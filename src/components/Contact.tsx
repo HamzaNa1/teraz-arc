@@ -3,8 +3,8 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function Contact() {
 	return (
-		<div className="container max-w-full min-h-screen bg-secondaryPage p-10">
-			<div className="h-full flex flex-col justify-center items-center gap-10">
+		<div className="container flex max-w-full min-h-screen bg-secondaryPage p-10">
+			<div className="w-full flex flex-col justify-center items-center gap-10">
 				<div className="md:w-[25%] w-[50%] flex justify-center">
 					<img src="/images/icon.svg" alt="" className="w-[45vh]" />
 				</div>

@@ -5,7 +5,7 @@ import { LiaWrenchSolid } from "react-icons/lia";
 
 export default function Goals() {
 	return (
-		<div className="container max-w-full min-h-[85vh] bg-primaryPage">
+		<div className="container flex justify-center max-w-full min-h-[85vh] bg-primaryPage">
 			<div className="absolute w-full min-h-[85vh]">
 				{/* stars */}
 				<img
@@ -38,9 +38,9 @@ export default function Goals() {
 				<span className="text-[rgb(81,81,81)] text-4xl z-10">
 					أهداف المؤسسة
 				</span>
-				<div className="w-full min-h-full hidden md:flex flex-col justify-center items-center z-10 flex-1">
-					<div className="flex gap-[6rem]">
-						<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
+				<div className="w-full hidden md:flex flex-col justify-center items-center z-10 flex-1">
+					<div className="h-full flex gap-[6rem] items-end">
+						<div className="h-full w-[185px] max-h-[400px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 							<LiaWrenchSolid className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
 							<span className="text-secondary group-hover:text-white">
 								تنفيذ الأعمال
@@ -49,7 +49,7 @@ export default function Goals() {
 								بأحدث التقنيات
 							</span>
 						</div>
-						<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
+						<div className="h-full w-[185px] max-h-[400px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 							<RiMedalLine className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
 							<span className="text-secondary group-hover:text-white">
 								ضمان جودة
@@ -58,7 +58,7 @@ export default function Goals() {
 								الأعمال
 							</span>
 						</div>
-						<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
+						<div className="h-full w-[185px] max-h-[400px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 							<MdOutlineShoppingCart className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
 							<span className="text-secondary group-hover:text-white">
 								انتقاء أفضل
@@ -68,8 +68,8 @@ export default function Goals() {
 							</span>
 						</div>
 					</div>
-					<div className="flex gap-[6rem]">
-						<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
+					<div className="h-full flex gap-[6rem]">
+						<div className="h-full w-[185px] max-h-[400px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 							<MdOutlineHandshake className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
 							<span className="text-secondary group-hover:text-white">
 								بناء الثقة
@@ -78,7 +78,7 @@ export default function Goals() {
 								بين العملاء
 							</span>
 						</div>
-						<div className="h-[250px] w-[185px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
+						<div className="h-full w-[185px] max-h-[400px] border-[#BF971B] border-[4px] rounded-[40px] flex flex-col justify-center items-center group hover:bg-primary">
 							<IoMdStopwatch className="fill-primary h-[40%] w-full p-5 group-hover:fill-white" />
 							<span className="text-secondary group-hover:text-white">
 								توفير الوقت

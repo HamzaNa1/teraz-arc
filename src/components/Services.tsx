@@ -11,7 +11,7 @@ export default function Services() {
 					<img
 						src="/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg"
 						alt=""
-						className="drop-shadow-2xl rounded-2xl object-contain"
+						className="w-full drop-shadow-2xl rounded-2xl object-cover"
 					/>
 				</div>
 				<div className="lg:w-[50%] w-full flex flex-col gap-y-5 text-xl md:text-4xl">
