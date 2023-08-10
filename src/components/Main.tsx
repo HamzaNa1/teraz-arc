@@ -25,7 +25,7 @@ export default function Main({
 				</div>
 				<div className="absolute w-full h-full">
 					<div className="h-full w-full flex items-end">
-						<img src="/images/v3.svg" className="w-full"></img>
+						<img src="/images/v3.svg" className="w-full h-fit"></img>
 					</div>
 				</div>
 
@@ -47,10 +47,10 @@ export default function Main({
 				></img>
 
 				<div className="w-full h-full flex flex-col justify-center items-center pb-16">
-					<div className="md:w-[25%] w-[50%] flex justify-center">
+					<div className="md:w-[25%] w-[50%] flex justify-center z-10">
 						<img src="/images/icon.svg" alt="" className="w-[50vh]" />
 					</div>
-					<div className="flex flex-col gap-5 text-center mt-5">
+					<div className="flex flex-col gap-5 text-center mt-5 z-10">
 						<span className="text-primary md:text-5xl text-3xl">
 							مؤسسة الطراز المعماري للمقاولات
 						</span>

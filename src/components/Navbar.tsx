@@ -13,7 +13,7 @@ export default function Navbar({
 	return (
 		<>
 			<div className="container max-w-full h-[5rem] bg-white">
-				<div className="w-full h-full flex justify-end">
+				<div className="w-full h-full flex justify-between">
 					<div className="hidden md:flex w-full justify-center items-center text-3xl gap-20 text-primary">
 						<button
 							className="hover:text-darkPrimary transition duration-100"
@@ -57,10 +57,10 @@ export default function Navbar({
 						</button>
 					</div>
 					<div
-						className="md:hidden mr-auto"
+						className="md:hidden w-20 h-full p-4"
 						onClick={() => setMenuShown(!menuShown)}
 					>
-						<GiHamburgerMenu className="fill-primary h-full w-full p-4" />
+						<GiHamburgerMenu className="fill-primary w-full h-full" />
 					</div>
 
 					<div className="h-full p-2">
@@ -76,41 +76,46 @@ export default function Navbar({
 				<div className="flex flex-col p-2 bg-white text-black">
 					<button
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
-						onClick={() =>
-							elements[0].current?.scrollIntoView({ behavior: "smooth" })
-						}
+						onClick={() => {
+							setMenuShown(false);
+							elements[0].current?.scrollIntoView({ behavior: "smooth" });
+						}}
 					>
 						رؤيتنا
 					</button>
 					<button
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
-						onClick={() =>
-							elements[1].current?.scrollIntoView({ behavior: "smooth" })
-						}
+						onClick={() => {
+							setMenuShown(false);
+							elements[0].current?.scrollIntoView({ behavior: "smooth" });
+						}}
 					>
 						أهدافنا
 					</button>
 					<button
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
-						onClick={() =>
-							elements[2].current?.scrollIntoView({ behavior: "smooth" })
-						}
+						onClick={() => {
+							setMenuShown(false);
+							elements[2].current?.scrollIntoView({ behavior: "smooth" });
+						}}
 					>
 						خدماتنا
 					</button>
 					<button
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
-						onClick={() =>
-							elements[3].current?.scrollIntoView({ behavior: "smooth" })
-						}
+						onClick={() => {
+							setMenuShown(false);
+							elements[3].current?.scrollIntoView({ behavior: "smooth" });
+						}}
 					>
 						أعمالنا
 					</button>
 					<button
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
-						onClick={() =>
-							elements[4].current?.scrollIntoView({ behavior: "smooth" })
-						}
+						onClick={() => {
+							setMenuShown(false);
+							elements[4].current?.scrollIntoView({ behavior: "smooth" });
+						}}
 					>
 						تواصل
 					</button>
