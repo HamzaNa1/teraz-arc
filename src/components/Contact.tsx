@@ -28,7 +28,9 @@ export default function Contact() {
 
 					<div className="flex flex-row gap-3 justify-center items-center	">
 						<img src="/images/call.svg"></img>
-						<span className="text-black text-3xl lg:text-4xl">0504518753</span>
+						<span className="text-black text-3xl lg:text-4xl">
+							+966 550338434
+						</span>
 					</div>
 
 					<div className="flex flex-row gap-3 justify-center items-center">
