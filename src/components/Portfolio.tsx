@@ -14,7 +14,7 @@ export default function Portfolio() {
 
 	return (
 		<div className="container flex max-w-full min-h-screen bg-primaryPage">
-			<div className="absolute w-full min-h-[85vh]">
+			<div className="absolute w-full min-h-screen">
 				{/* stars */}
 				<img
 					src="/images/whitestar.svg"
