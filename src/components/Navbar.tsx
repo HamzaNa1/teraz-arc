@@ -14,7 +14,7 @@ export default function Navbar({
 		<>
 			<div className="container max-w-full h-[5rem] bg-white">
 				<div className="w-full h-full flex justify-between">
-					<div className="hidden md:flex w-full justify-center items-center text-3xl gap-20 text-primary">
+					<div className="hidden lg:flex w-full justify-center items-center text-3xl gap-20 text-primary">
 						<button
 							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
@@ -57,7 +57,7 @@ export default function Navbar({
 						</button>
 					</div>
 					<div
-						className="md:hidden w-20 h-full p-4"
+						className="lg:hidden w-20 h-full p-4"
 						onClick={() => setMenuShown(!menuShown)}
 					>
 						<GiHamburgerMenu className="fill-primary w-full h-full" />

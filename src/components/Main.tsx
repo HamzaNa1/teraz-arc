@@ -54,7 +54,9 @@ export default function Main({
 						<span className="text-primary md:text-5xl text-3xl">
 							مؤسسة الطراز المعماري للمقاولات
 						</span>
-						<span className="md:text-3xl text-xl">مستمرون معكم منذ 1993م</span>
+						<span className="text-white md:text-3xl text-xl">
+							مستمرون معكم منذ 1993م
+						</span>
 					</div>
 				</div>
 			</div>

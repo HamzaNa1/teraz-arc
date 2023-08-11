@@ -28,8 +28,8 @@ export default function ImageSlider({ images }: { images: Image[] }) {
 	}, [currentIndex]);
 
 	return (
-		<div className="flex h-full">
-			<div className="max-sm:w-full h-full aspect-[9/16] lg:aspect-[16/14] md:m-auto py-16 md:px-4 relative group">
+		<div className="flex h-full justify-center">
+			<div className="w-full md:w-auto h-full md:min-w-[512px] md:aspect-video py-16 md:px-4 relative group">
 				<div className="md:rounded-2xl md:border-[#BF971B] md:border-[4px] md:p-2 w-full h-full">
 					<div
 						style={{ backgroundImage: `url(${images[currentIndex].url})` }}

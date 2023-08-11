@@ -13,7 +13,7 @@ export default function Portfolio() {
 	}, []);
 
 	return (
-		<div className="container flex max-w-full min-h-[85vh] bg-primaryPage">
+		<div className="container flex max-w-full min-h-screen bg-primaryPage">
 			<div className="absolute w-full min-h-[85vh]">
 				{/* stars */}
 				<img
