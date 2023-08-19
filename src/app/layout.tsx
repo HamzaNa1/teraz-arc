@@ -1,22 +1,22 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Cairo } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Cairo({ subsets: ["arabic", "latin"] });
 
 export const metadata: Metadata = {
-  title: 'Teraz',
-  description: '',
-}
+	title: "Teraz",
+	description: "",
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+	return (
+		<html lang="en">
+			<body className={inter.className + " no-scrollbar"}>{children}</body>
+		</html>
+	);
 }
