@@ -5,7 +5,7 @@ export default function Vision() {
 		<div className="container bg-white flex lg:flex-row flex-col max-w-full lg:h-screen h-fit py-16 lg:py-0 md:px-32 px-2 justify-center items-center md:gap-32 gap-10">
 			<div className="drop-shadow-2xl">
 				<Image
-					src="/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg"
+					src="/images/image1.jpg"
 					alt=""
 					width={900}
 					height={900}
