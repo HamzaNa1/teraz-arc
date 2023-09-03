@@ -27,7 +27,7 @@ export const GetImages = zact()(async () => {
 		return { images: images };
 	} catch {
 		return {
-			images: [{ url: "/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg" }],
+			images: [{ url: "/images/imageTest.jpg" }],
 		};
 	} finally {
 		await client.close(true);

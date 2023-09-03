@@ -9,7 +9,7 @@ export default function Services() {
 			<div className="h-full flex lg:flex-row flex-col flex-1 justify-center items-center gap-10">
 				<div className="lg:w-[50%] w-full rounded-2xl border-[#BF971B] border-[4px] p-2">
 					<img
-						src="/images/bad9454e-a349-441c-848f-486d21eed8ca.jpg"
+						src="/images/image2.jpg"
 						alt=""
 						className="w-full drop-shadow-2xl rounded-2xl object-cover"
 					/>
