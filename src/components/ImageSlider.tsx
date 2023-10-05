@@ -1,7 +1,7 @@
 "use client";
 import { Image } from "@/utils/ImageHelper";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 import "keen-slider/keen-slider.min.css";
