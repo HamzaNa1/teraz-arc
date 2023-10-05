@@ -4,41 +4,64 @@ import { Image } from "@/utils/ImageHelper";
 import React, { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-export default function ImageSlider({ images }: { images: Image[] }) {
-	const [currentIndex, setCurrentIndex] = useState(0);
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 
+export default function ImageSlider({ images }: { images: Image[] }) {
 	const prevSlide = () => {
-		const isFirstSlide = currentIndex === 0;
-		const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-		setCurrentIndex(newIndex);
+		instanceRef.current?.prev();
 	};
 
 	const nextSlide = () => {
-		const isLastSlide = currentIndex === images.length - 1;
-		const newIndex = isLastSlide ? 0 : currentIndex + 1;
-		setCurrentIndex(newIndex);
+		instanceRef.current?.next();
 	};
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			nextSlide();
-		}, 5000);
+	const [sliderRef, instanceRef] = useKeenSlider(
+		{
+			loop: true,
+		},
+		[
+			(slider) => {
+				let timeout: NodeJS.Timeout;
 
-		return () => clearInterval(interval);
-	}, [currentIndex]);
+				function clearNextTimeout() {
+					clearTimeout(timeout);
+				}
+
+				function nextTimeout() {
+					clearTimeout(timeout);
+					timeout = setTimeout(() => {
+						slider.next();
+					}, 2000);
+				}
+
+				slider.on("dragStarted", clearNextTimeout);
+				slider.on("animationEnded", nextTimeout);
+				slider.on("updated", nextTimeout);
+
+				nextTimeout();
+			},
+		]
+	);
 
 	return (
-		<div className="flex h-full justify-center">
-			<div className="w-full md:w-auto h-full md:min-w-[512px] md:aspect-video py-16 md:px-4 relative group">
+		<div className="flex w-full h-full justify-center">
+			<div className="container lg:aspect-video md:aspect-auto py-16 md:px-4 relative group">
 				<div className="md:rounded-2xl md:border-[#BF971B] md:border-[4px] md:p-2 w-full h-full">
-					<div
-						style={{ backgroundImage: `url(${images[currentIndex].url})` }}
-						className="w-full h-full md:rounded-2xl bg-center bg-cover duration-500 drop-shadow-2xl"
-					></div>
-					<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+					<div ref={sliderRef} className="keen-slider w-full h-full">
+						{images.map((img, i) => (
+							<div key={i} className="keen-slider__slide w-full h-full">
+								<div
+									style={{ backgroundImage: `url(${img.url})` }}
+									className="w-full h-full md:rounded-2xl bg-center bg-cover drop-shadow-2xl"
+								></div>
+							</div>
+						))}
+					</div>
+					<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 mx-3 bg-black/20 text-white cursor-pointer">
 						<BsChevronCompactLeft onClick={prevSlide} size={30} />
 					</div>
-					<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+					<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 mx-3 bg-black/20 text-white cursor-pointer">
 						<BsChevronCompactRight onClick={nextSlide} size={30} />
 					</div>
 				</div>

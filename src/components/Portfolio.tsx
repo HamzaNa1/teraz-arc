@@ -13,7 +13,7 @@ export default function Portfolio() {
 	}, []);
 
 	return (
-		<div className="container flex max-w-full min-h-screen bg-primaryPage">
+		<div className="container flex max-w-full max-h-screen min-h-screen bg-primaryPage">
 			<div className="absolute w-full min-h-screen">
 				{/* stars */}
 				<img
@@ -41,7 +41,7 @@ export default function Portfolio() {
 					className="hidden md:block w-16 h-16 absolute translate-y-[200px] right-[60px] drop-shadow-lg"
 				></img>
 			</div>
-			<div className="relative w-full flex flex-col items-center py-10 md:px-6 gap-12 z-10">
+			<div className="relative w-full flex flex-col items-center pt-10 pb-16 md:px-6 gap-12 z-10">
 				<span className="text-4xl text-black ">بعض الأعمال المنفذة</span>
 				{!data && (
 					<div className="w-full h-full self-center flex justify-center items-center">
