@@ -8,6 +8,9 @@
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 	"workbench.iconTheme": "vscode-icons",
 	"vsicons.dontShowNewVersionMessage": true,
 	"editor.formatOnSave": true,
@@ -22,7 +25,8 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 	"editor.detectIndentation": false,
-    "prettier.useTabs": true,
-    "editor.tabSize": 2,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+  "prettier.useTabs": true,
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
