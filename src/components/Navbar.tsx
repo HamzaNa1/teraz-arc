@@ -1,13 +1,9 @@
 "use client";
 
-import { RefObject, useState } from "react";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function Navbar({
-	elements,
-}: {
-	elements: RefObject<HTMLDivElement>[];
-}) {
+export default function Navbar() {
 	const [menuShown, setMenuShown] = useState(false);
 
 	return (
@@ -18,7 +14,9 @@ export default function Navbar({
 						<button
 							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
-								elements[4].current?.scrollIntoView({ behavior: "smooth" })
+								document
+									.getElementById("contact")
+									?.scrollIntoView({ behavior: "smooth" })
 							}
 						>
 							تواصل
@@ -26,7 +24,9 @@ export default function Navbar({
 						<button
 							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
-								elements[3].current?.scrollIntoView({ behavior: "smooth" })
+								document
+									.getElementById("portfolio")
+									?.scrollIntoView({ behavior: "smooth" })
 							}
 						>
 							أعمالنا
@@ -34,7 +34,9 @@ export default function Navbar({
 						<button
 							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
-								elements[2].current?.scrollIntoView({ behavior: "smooth" })
+								document
+									.getElementById("services")
+									?.scrollIntoView({ behavior: "smooth" })
 							}
 						>
 							خدماتنا
@@ -42,7 +44,9 @@ export default function Navbar({
 						<button
 							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
-								elements[1].current?.scrollIntoView({ behavior: "smooth" })
+								document
+									.getElementById("goals")
+									?.scrollIntoView({ behavior: "smooth" })
 							}
 						>
 							أهدافنا
@@ -50,7 +54,9 @@ export default function Navbar({
 						<button
 							className="hover:text-darkPrimary transition duration-100"
 							onClick={() =>
-								elements[0].current?.scrollIntoView({ behavior: "smooth" })
+								document
+									.getElementById("vision")
+									?.scrollIntoView({ behavior: "smooth" })
 							}
 						>
 							رؤيتنا
@@ -78,7 +84,9 @@ export default function Navbar({
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() => {
 							setMenuShown(false);
-							elements[0].current?.scrollIntoView({ behavior: "smooth" });
+							document
+								.getElementById("vision")
+								?.scrollIntoView({ behavior: "smooth" });
 						}}
 					>
 						رؤيتنا
@@ -87,7 +95,9 @@ export default function Navbar({
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() => {
 							setMenuShown(false);
-							elements[0].current?.scrollIntoView({ behavior: "smooth" });
+							document
+								.getElementById("goals")
+								?.scrollIntoView({ behavior: "smooth" });
 						}}
 					>
 						أهدافنا
@@ -96,7 +106,9 @@ export default function Navbar({
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() => {
 							setMenuShown(false);
-							elements[2].current?.scrollIntoView({ behavior: "smooth" });
+							document
+								.getElementById("services")
+								?.scrollIntoView({ behavior: "smooth" });
 						}}
 					>
 						خدماتنا
@@ -105,7 +117,9 @@ export default function Navbar({
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() => {
 							setMenuShown(false);
-							elements[3].current?.scrollIntoView({ behavior: "smooth" });
+							document
+								.getElementById("portfolio")
+								?.scrollIntoView({ behavior: "smooth" });
 						}}
 					>
 						أعمالنا
@@ -114,7 +128,9 @@ export default function Navbar({
 						className="text-start active:bg-primary active:text-white p-2 transition duration-100 rounded-md"
 						onClick={() => {
 							setMenuShown(false);
-							elements[4].current?.scrollIntoView({ behavior: "smooth" });
+							document
+								.getElementById("contact")
+								?.scrollIntoView({ behavior: "smooth" });
 						}}
 					>
 						تواصل
