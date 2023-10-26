@@ -21,28 +21,26 @@ export default function Contact() {
 				<div className="grid md:grid-cols-2 grid-cols-1 gap-x-32 gap-y-16 place-items-start ">
 					<div className="flex flex-row gap-3 justify-center items-center">
 						<img src="/images/home.svg"></img>
-						<span className="text-black text-3xl lg:text-4xl">
-							Saudi Arabia
-						</span>
+						<span className="text-black text-xl lg:text-4xl">Saudi Arabia</span>
 					</div>
 
-					<div className="flex flex-row gap-3 justify-center items-center	">
+					<div className="flex flex-row gap-3 justify-center items-center 	">
 						<img src="/images/call.svg"></img>
-						<span className="text-black text-3xl lg:text-4xl">
+						<span className="text-black text-xl lg:text-4xl">
 							+966 550338434
 						</span>
 					</div>
 
 					<div className="flex flex-row gap-3 justify-center items-center">
 						<img src="/images/mail.svg"></img>
-						<span className="text-black text-3xl lg:text-4xl text-justify">
+						<span className="text-black text-xl lg:text-4xl text-justify">
 							info@terazart.com
 						</span>
 					</div>
 
 					<div className="flex flex-row gap-3 justify-center items-center">
 						<img src="/images/call.svg"></img>
-						<span className="text-black text-3xl lg:text-4xl">011-470098</span>
+						<span className="text-black text-xl lg:text-4xl">011-470098</span>
 					</div>
 
 					<Link
@@ -52,7 +50,7 @@ export default function Contact() {
 						className="flex flex-row gap-3 justify-center items-center group"
 					>
 						<AiOutlineInstagram className="fill-black w-14 h-full group-hover:fill-primary transition duration-200" />
-						<span className="text-black text-3xl lg:text-4xl group-hover:text-primary transition duration-200">
+						<span className="text-black text-xl lg:text-4xl group-hover:text-primary transition duration-200">
 							@Terazarc
 						</span>
 					</Link>
@@ -64,7 +62,7 @@ export default function Contact() {
 						className="flex flex-row gap-3 justify-center items-center group"
 					>
 						<AiOutlineWhatsApp className="fill-black w-14 h-full group-hover:fill-primary transition duration-200" />
-						<span className="text-black text-3xl lg:text-4xl group-hover:text-primary transition duration-200">
+						<span className="text-black text-xl lg:text-4xl group-hover:text-primary transition duration-200">
 							+966 504518753
 						</span>
 					</Link>

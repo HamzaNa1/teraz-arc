@@ -10,14 +10,14 @@ import ScrollToTop from "@/components/ScrollToTop";
 export default function Home() {
 	return (
 		<>
-			<Script src="https://www.googletagmanager.com/gtag/js?id=G-BRZVEE1FND" />
+			<Script src="https://www.googletagmanager.com/gtag/js?id=G-G9LLQX596V" />
 			<Script id="google-analytics">
 				{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-BRZVEE1FND');
+          gtag('config', 'G-G9LLQX596V');
         `}
 			</Script>
 			<main className="w-screen max-w-[100vw] overflow-hidden">
