@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export default function Home() {
 	return (
 		<>
+			{/* google analytics */}
 			<Script src="https://www.googletagmanager.com/gtag/js?id=G-G9LLQX596V" />
 			<Script id="google-analytics">
 				{`
@@ -20,6 +21,19 @@ export default function Home() {
           gtag('config', 'G-G9LLQX596V');
         `}
 			</Script>
+
+			{/* google ads */}
+			<Script src="https://www.googletagmanager.com/gtag/js?id=AW-11401696947" />
+			<Script id="google-ads">
+				{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'AW-11401696947');
+        `}
+			</Script>
+
 			<main className="w-screen max-w-[100vw] overflow-hidden">
 				<Main />
 				<div id="vision">
