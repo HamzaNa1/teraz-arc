@@ -36,7 +36,7 @@ export default function Home() {
 
 			<main className="w-screen max-w-[100vw] overflow-hidden">
 				<Main />
-				<div id="vision">
+				{/* <div id="vision">
 					<Vision />
 				</div>
 				<div id="goals">
@@ -51,7 +51,7 @@ export default function Home() {
 				<div id="contact">
 					<Contact />
 				</div>
-				<ScrollToTop />
+				<ScrollToTop /> */}
 			</main>
 		</>
 	);
